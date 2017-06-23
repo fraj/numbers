@@ -1,2 +1,3 @@
 before_script: cd numbers
 language: java
+jdk: oraclejdk8

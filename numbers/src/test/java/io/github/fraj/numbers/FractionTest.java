@@ -467,4 +467,32 @@ public class FractionTest {
 	public void testDivide_Zero() throws Exception {
 		TEST_FRACTION.divide(Fraction.ZERO);
 	}
+
+	/**
+	 * Runs parameterized unit test for {@link Fraction#isInteger()} in nominal
+	 * case.
+	 * 
+	 * @param argLeft
+	 *            the {@link Fraction} to be tested
+	 * @param argExpectedResult
+	 *            the expected result of the test
+	 * @throws Exception
+	 *             only in case of test failure
+	 */
+	@Test
+	@Parameters
+	public void testIsInteger(Fraction argLeft, boolean argExpectedResult) throws Exception {
+		assertEquals("Wrong result to integer test", argExpectedResult, argLeft.isInteger());
+	}
+
+	@SuppressWarnings("unused")
+	private static Object[][] parametersForTestIsInteger() {
+		return new Object[][] {
+				{ TEST_FRACTION, false },
+				{ TEST_FRACTION.add(new Fraction(2, 7)), true },
+				{ Fraction.ZERO, true },
+				{ new Fraction(1), true },
+				{ new Fraction(54, 3), true} };
+	}
+
 }

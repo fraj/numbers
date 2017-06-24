@@ -16,7 +16,8 @@ public class Fraction extends Number implements Comparable<Fraction> {
 	private final int denominator;
 
 	/**
-	 * Constructs a fraction from the two provided integers as its numerator and denominator.
+	 * Constructs a fraction from the two provided integers as its numerator and
+	 * denominator.
 	 * 
 	 * @param argNumerator
 	 *            the fraction's numerator
@@ -36,7 +37,8 @@ public class Fraction extends Number implements Comparable<Fraction> {
 	}
 
 	/**
-	 * Constructs a fraction from the single provided integer as its numerator (denominator is 1).
+	 * Constructs a fraction from the single provided integer as its numerator
+	 * (denominator is 1).
 	 * 
 	 * @param argNumerator
 	 *            the fraction's numerator
@@ -193,6 +195,15 @@ public class Fraction extends Number implements Comparable<Fraction> {
 	 */
 	public Fraction divide(Fraction argOther) {
 		return multiply(argOther.invert());
+	}
+
+	/**
+	 * Tells whether this {@link Fraction} holds an integer value.
+	 * 
+	 * @return <code>true</code> if this holds an integer value, otherwise false
+	 */
+	public boolean isInteger() {
+		return denominator == 1;
 	}
 
 }

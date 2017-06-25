@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import io.github.fraj.numbers.Fraction;
+import io.github.fraj.numbers.fractions.Fraction;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 

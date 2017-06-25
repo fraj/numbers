@@ -1,4 +1,6 @@
-package io.github.fraj.numbers;
+package io.github.fraj.numbers.fractions;
+
+import io.github.fraj.numbers.util.GCD;
 
 /**
  * An immutable number defined as the fraction of 2 integers.
@@ -30,7 +32,7 @@ public class Fraction extends Number implements Comparable<Fraction> {
 		if (argDenominator == 0) {
 			throw new ArithmeticException();
 		}
-		int locGcd = Numbers.gcd(argNumerator, argDenominator);
+		int locGcd = GCD.of(argNumerator, argDenominator);
 		int locSignum = Integer.signum(argDenominator);
 		numerator = locSignum * argNumerator / locGcd;
 		denominator = locSignum * argDenominator / locGcd;

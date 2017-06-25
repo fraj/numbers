@@ -6,17 +6,53 @@
 	<artifactId>numbers</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<name>Numbers by Fraj</name>
+	<description>A Java library for processing numbers</description>
+	<url>https://github.com/fraj/numbers/wiki</url>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>fraj</id>
+			<name>François Rajchenbach</name>
+			<email>f.rajchenbach@gmail.com</email>
+			<url>https://fraj.github.io/</url>
+			<timezone>Europe/Paris</timezone>
+		</developer>
+	</developers>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
 
+	<scm>
+		<connection>scm:git:https://github.com/fraj/numbers.git</connection>
+		<developerConnection>scm:git:https://github.com/fraj/numbers.git</developerConnection>
+		<url>https://github.com/fraj/numbers</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/fraj/numbers/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Travis</system>
+		<url>https://travis-ci.org/fraj/numbers</url>
+	</ciManagement>
+
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.1</version>
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
@@ -39,11 +75,5 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<name>Numbers by Fraj</name>
-	<description>A set of additional classes for dealing with numbers</description>
-	<url>https://github.com/fraj/numbers/wiki</url>
-	<organization>
-		<name>Fraj on Github</name>
-		<url>https://fraj.github.io/</url>
-	</organization>
+
 </project>

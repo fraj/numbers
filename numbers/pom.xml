@@ -4,7 +4,7 @@
 
 	<groupId>io.github.fraj</groupId>
 	<artifactId>numbers</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.0-RELEASE</version>
 
 	<name>Numbers by Fraj</name>
 	<description>A Java library for processing numbers</description>

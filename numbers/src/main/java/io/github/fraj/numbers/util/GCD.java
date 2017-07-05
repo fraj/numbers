@@ -6,7 +6,7 @@ package io.github.fraj.numbers.util;
 public final class GCD {
 	
 	private GCD() {
-		
+		// Default private constructor
 	}
 
 	/**

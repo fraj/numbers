@@ -112,7 +112,8 @@ public class Fraction extends Number implements Comparable<Fraction> {
 
 	@Override
 	public String toString() {
-		return (denominator == 1) ? (Integer.toString(numerator)) : (Double.toString(doubleValue()));
+		return (denominator == 1) ? (Integer.toString(numerator))
+				: (Integer.toString(numerator) + "/" + Integer.toString(denominator));
 	}
 
 	@Override
@@ -158,8 +159,8 @@ public class Fraction extends Number implements Comparable<Fraction> {
 	}
 
 	/**
-	 * Returns a {@link Fraction} resulting from multiplying this by the
-	 * specified {@link Fraction}.
+	 * Returns a {@link Fraction} resulting from multiplying this by the specified
+	 * {@link Fraction}.
 	 * 
 	 * @param argOther
 	 *            the {@link Fraction} to be multiplied by

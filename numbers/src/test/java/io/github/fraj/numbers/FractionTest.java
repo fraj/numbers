@@ -97,10 +97,10 @@ public class FractionTest {
 	 *             only in case of test failure
 	 */
 	@Test
-	@Parameters({ "117936, 15288, 7.714285714285714", "15288, 117936, 0.12962962962962962",
-			"-117936, 15288, -7.714285714285714", "15288, -117936, -0.12962962962962962",
-			"-117936, -15288, 7.714285714285714", "-15288, -117936, 0.12962962962962962", "3, 17, 0.17647058823529413",
-			"17, 3, 5.666666666666667", "0, 25, 0", "125, 25, 5" })
+	@Parameters({ "117936, 15288, 54/7", "15288, 117936, 7/54",
+			"-117936, 15288, -54/7", "15288, -117936, -7/54",
+			"-117936, -15288, 54/7", "-15288, -117936, 7/54", "3, 17, 3/17",
+			"17, 3, 17/3", "0, 25, 0", "125, 25, 5" })
 	public void testToString_Nominal(int argNumerator, int argDenominator, String argExpectedAsString)
 			throws Exception {
 		assertEquals("Wrong string for reduced fraction", argExpectedAsString,

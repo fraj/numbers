@@ -1,4 +1,4 @@
-package io.github.fraj.numbers;
+package io.github.fraj.numbers.fractions;
 
 import static org.junit.Assert.*;
 

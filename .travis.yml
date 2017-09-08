@@ -5,5 +5,4 @@ before_install:
   - echo "<settings><servers><server><id>ossrh</id><username>\${env.OSSRH_USERNAME}</username><password>\${env.OSSRH_PASSWORD}</password></server></servers><properties><gpg.executable>${env.GPG_EXECUTABLE}</gpg.executable><gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase></properties></settings>" > ~/settings.xml
   - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
   - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
-deploy:
-  - mvn deploy --settings ~/settings.xml
+deploy: mvn deploy --settings ~/settings.xml

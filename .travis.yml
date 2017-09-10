@@ -1,7 +1,0 @@
-language: java
-jdk: oraclejdk8
-before_script:
-  - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
-  - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
-  - cd numbers
-script: mvn deploy --settings ../settings.xml

@@ -27,4 +27,4 @@ dependencies {
 * Download the library from http://repo1.maven.org/maven2/io/github/fraj/numbers/0.1.0-RELEASE/
 
 ## License
-**Numbers** is distributed under the Apache Log4j 2 is distributed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+**Numbers** is distributed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
